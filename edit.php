@@ -14,20 +14,20 @@ if(isset($_GET['id'])){
             $description = $row['todoDescription'];
 
             echo "
-                <h2>Edit Todo</h2>
+                <h2>Edit To-do</h2>
                 
             <form action='edit.php?id=$id' method='post'>
             <p>Title</p>
              <input type='text' name='title' value='$title'>
              <p>Description</p>
              <input type='text' name='description' value='$description'>
-             <br>
-             <input type='submit' name='submit' value='edit'>
+             <br><br>
+             <input type='submit' name='submit' value='edit'>&nbsp;&nbsp;&nbsp;<button type='submit'><a href='create.php' style='text-decoration:none'>Create To-do List</a></button>
             </form>
             ";
         }
     }else{
-        echo "no todo";
+        echo "no To-do";
     }
 
 

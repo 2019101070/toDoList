@@ -15,13 +15,16 @@ if(isset($_GET['id'])) {
             $date = $row['date'];
 
             echo "
-            <h2>$title</h2>
+            <h1>$title</h1>
             <h3>description</h3>
-            <p>$description</p>
-            <small>$date</small>
+            <h1>$description</h1>
+            <h3>$date</h3>
             ";
         }
     }else{
-        echo 'no to-do';
+        echo 'no To-do';
     }
 }
+?>
+<br><br>
+<button type='submit'><a href='index.php' style='text-decoration:none'>List of my To-do</a></button>

@@ -45,7 +45,7 @@ if(isset($_POST['submit'])) {
 </head>
 <body>
 <h1>Create To-do List</h1>
-<button type="submit"><a href="index.php">View all To-do</a></button>
+<button type="submit"><a href="index.php" style='text-decoration:none'>View all To-do</a></button>
 <form method="post" action="create.php">
     <p>To-do title: </p>
     <input name="todoTitle" type="text">
