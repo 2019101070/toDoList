@@ -36,6 +36,5 @@ if(mysqli_num_rows($result) >= 1){
 
 ?>
 
-
 </body>
 </html>
